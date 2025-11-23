@@ -10,6 +10,12 @@
       <h1>Hallo, ich bin neu!</h1>
       <p>Das ist meine erste Webeite -live im Internet!</p>
       <p>Und ich habe sie heute in unter einer Stunde gebaut.</p>
+      <p id="nachricht" style="display: none; color: yellow; font-weight: bold; ">Du hast geklickt! Jetzt lernst Du JavaScript. </p>
    </div>
+   <script> 
+     document.getElementById('coolButton').addEventListener('click' , function() {
+       document.getElementById('nachricht').style.display = 'block' ;
+});
+   </script>
 </body>
 </html>
