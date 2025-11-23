@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, # 667eea, #764ba2);
+  color: whirte;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 20px;
+}
+
+h1 { font-size: 4rem; margin: 0; }
+p { font-size: 1.5rem; }
