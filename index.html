@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-   <meta charset="utf-8">
-   <title>Dein Name - Meine erste Seite</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <div class="container">
+  <head>
+     <meta charset="utf-8">
+     <title>Carlos Göpfert - Meine erste Seite</title>
+     <link rel="stylesheet" href="style.css">
+  </head>
+
+   <body>
+     <div class="container">
       <h1>Hallo, ich bin neu!</h1>
       <p>Das ist meine erste Webeite -live im Internet!</p>
       <p>Und ich habe sie heute in unter einer Stunde gebaut.</p>
-      <p id="nachricht" style="display: none; color: yellow; font-weight: bold; ">Du hast geklickt! Jetzt lernst Du JavaScript. </p>
-   </div>
-   <script> 
-     document.getElementById('coolButton').addEventListener('click' , function() {
-       document.getElementById('nachricht').style.display = 'block' ;
-});
-   </script>
-</body>
+      <button id="coolButton">Klick mich!</button>
+      <p id="nachricht" style="display: none; color: yellow; font-weight: bold; ">Du hast geklickt! Jetzt lernst Du JavaScript. 
+      </p>
+      <div id="zaehler" style="margin-top: 30px; font-size: 1.8rem; color: #ffd700;"> 
+      Besucher heute: <span id="count">0</span>          
+      </div>
+    </div>  
+    <script> 
+   
+     document.getElementById(#coolButton').addEventListener('click' , function() { 
+       document.getElementById('nachricht').style.display = 'block';
+     });
+
+
+     let count = localStorage.getItem('besucherCount') || 0;
+     count = parseInt(count) +1;
+
+
+     const heute = new Date().toDateString();
+     if (localStorage.getItem('letzterTag' , heute);
+       localStorage.setIten('besucherCount' , 1);
+       localStorage.setItem('letzterTag' , heute);
+       document.getElementById('count')).textContent = 1;
+     }       
+     </script>
+  </body>
 </html>
